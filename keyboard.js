@@ -9,7 +9,7 @@ function getCookie(name = 'lang') {
 }
 
 let cookie = getCookie('lang');
-if (cookie === undefined) {
+if (cookie === '') {
   document.cookie = `lang=${POLISH_LANGUAGE}`;
   cookie = `${POLISH_LANGUAGE}`;
 }
